@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2942" />
+      <stop offset="100%" stop-color="#13385c" />
+    </linearGradient>
+    <linearGradient id="carGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#ff9800" />
+    </linearGradient>
+    <filter id="heroShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Card Frame -->
+  <rect width="700" height="450" fill="url(#heroBgGrad)" rx="20"/>
+  
+  <!-- Subtle Background Grid/Map Pattern -->
+  <path d="M 50 100 Q 350 50 650 100 T 650 350" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2" stroke-dasharray="6,6"/>
+  <path d="M 0 360 C 200 340, 500 380, 700 350" fill="none" stroke="url(#goldHighlight)" stroke-width="3" opacity="0.6"/>
+
+  <!-- Taxi Illustration -->
+  <g filter="url(#heroShadow)">
+    <!-- Car Silhouette -->
+    <path d="M 90 320 C 110 240, 190 210, 260 190 C 330 130, 520 130, 590 195 C 630 210, 665 240, 655 320 Z" fill="url(#carGrad)"/>
+    <!-- Windows -->
+    <path d="M 280 190 C 330 145, 500 145, 575 195 Z" fill="#0b2847"/>
+    <path d="M 420 148 L 420 192" stroke="#ffffff" stroke-width="3"/>
+
+    <!-- Royal Cabs Brand Strip -->
+    <path d="M 150 280 L 630 280 L 615 296 L 165 296 Z" fill="#ff6b00"/>
+    <text x="390" y="292" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">ROYAL CABS TIRUPUR • 9715760903</text>
+
+    <!-- Taxi Light -->
+    <rect x="400" y="125" width="70" height="20" rx="5" fill="#ffb703" stroke="#0b2847" stroke-width="2"/>
+    <text x="435" y="139" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#0b2847" text-anchor="middle">TAXI</text>
+
+    <!-- Wheels -->
+    <circle cx="210" cy="320" r="40" fill="#0f172a" stroke="#94a3b8" stroke-width="5"/>
+    <circle cx="210" cy="320" r="20" fill="#e2e8f0"/>
+    <circle cx="550" cy="320" r="40" fill="#0f172a" stroke="#94a3b8" stroke-width="5"/>
+    <circle cx="550" cy="320" r="20" fill="#e2e8f0"/>
+  </g>
+
+  <!-- Trust Floating Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="210" height="54" rx="12" fill="rgba(11, 40, 71, 0.85)" stroke="rgba(255, 183, 3, 0.4)" stroke-width="1.5"/>
+    <circle cx="32" cy="27" r="14" fill="#ff6b00"/>
+    <path d="M 26 27 L 30 31 L 38 23" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <text x="56" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#ffffff">24/7 Service</text>
+    <text x="56" y="40" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#ffb703">Tirupur &amp; Outstation</text>
+  </g>
+</svg>

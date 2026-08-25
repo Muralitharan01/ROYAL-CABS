@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b2847" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0b2847" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <rect width="600" height="350" fill="url(#bgGrad)" rx="16"/>
+  
+  <!-- Road Graphic -->
+  <path d="M 0 280 L 600 280" stroke="#cbd5e1" stroke-width="4"/>
+  
+  <!-- Car Group -->
+  <g filter="url(#shadow)">
+    <!-- Car Body Base -->
+    <path d="M 80 250 C 90 200, 150 180, 200 170 C 260 120, 420 120, 480 175 C 520 185, 550 210, 540 250 Z" fill="url(#carBody)" stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Windows -->
+    <path d="M 215 170 C 260 132, 400 132, 465 175 Z" fill="url(#glass)" opacity="0.9"/>
+    <path d="M 330 135 L 330 173" stroke="#f1f5f9" stroke-width="3"/>
+    
+    <!-- Royal Cabs Brand Strip -->
+    <path d="M 120 220 L 520 220 L 510 232 L 130 232 Z" fill="#ff6b00"/>
+    <text x="320" y="229" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">ROYAL CABS TIRUPUR • 9715760903</text>
+    
+    <!-- Taxi Roof Light -->
+    <rect x="310" y="112" width="50" height="15" rx="4" fill="#ffb703" stroke="#0b2847" stroke-width="2"/>
+    <text x="335" y="123" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#0b2847" text-anchor="middle">TAXI</text>
+    
+    <!-- Headlight & Taillight -->
+    <path d="M 525 210 C 540 215, 540 230, 530 235 Z" fill="#ffb703"/>
+    <path d="M 85 215 C 80 220, 80 230, 88 235 Z" fill="#ef4444"/>
+
+    <!-- Wheels -->
+    <circle cx="170" cy="250" r="32" fill="#1e293b" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="170" cy="250" r="16" fill="#cbd5e1"/>
+    <circle cx="450" cy="250" r="32" fill="#1e293b" stroke="#94a3b8" stroke-width="4"/>
+    <circle cx="450" cy="250" r="16" fill="#cbd5e1"/>
+  </g>
+  
+  <!-- Vehicle Name Overlay -->
+  <rect x="30" y="25" width="170" height="34" rx="8" fill="#0b2847"/>
+  <text x="115" y="47" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">TOYOTA GLANZA</text>
+</svg>
